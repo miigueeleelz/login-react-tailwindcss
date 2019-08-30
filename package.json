@@ -5,11 +5,13 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "tailwindcss": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "tailwind:build": "tailwind build src/assets/css/tailwind.css -c  tailwind.config.js -o src/index.css",
+    "start": "npm run tailwind:build && react-scripts start",
+    "build": "npm run tailwind:build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
