@@ -9,7 +9,7 @@ const LoginView = () => (
     <section className="w-1/2">
       <img className="h-full object-cover w-full" src={Backstretch} alt="Backstretch" />
     </section>
-    <section className="w-1/2">
+    <section className="flex items-center w-1/2">
       <LoginForm />
     </section>
   </main>
